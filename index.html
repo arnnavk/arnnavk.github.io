@@ -11,21 +11,63 @@
 <body>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+      body {
+        background-color: #161414;
+        font-family: myFont;
+        overflow-x:hidden;
+      }
+      .container {
+        width: 100%;
+        background-color: #161414;
+      }
     .jumbotron {
       width: 100%;
-      background-color: grey;
-      position: sticky !important; 
-      position: -webkit-sticky !important;
-      top: 0 !important;
+      background-color: #161414;
+      position: sticky; 
+      position: -webkit-sticky;
+      top: 0;
       z-index: 9;
       transition: 0.5s;
       color:black;
       overflow: hidden;
+      padding: 2%;
     }
      .jumbotron #menu {
        display: none;
      }
+     .jumbotron #item2 {
+      padding: 38px;
+      text-transform: uppercase;
+     }
+     .jumbotron #item1, #item2 {
+      padding: 24px 40px;
+      font-family: MyFont2;
+      float: right;
+      text-decoration: none;
+     }
+     .jumbotron .active {
+      color:rgb(0, 184, 153);
+     }
+
+     .button1 {
+      padding: 14px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      background-color: rgb(0, 184, 153);
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      letter-spacing: 0.45px;
+      text-transform: uppercase;
+    }
+
     @media screen and (max-width: 1100px) {
+      .jumbotron {
+        padding: 0%;
+      }
       .jumbotron #logo {
         float: left;
       }
@@ -35,6 +77,15 @@
         padding-right: 2%;
         float: right;
       }
+    }
+    @font-face {
+      font-family: MyFont;
+      src: url(fonts/Gilroy-Regular.ttf);
+    }
+  
+    @font-face {
+      font-family: MyFont2;
+      src: url(fonts/Montserrat-SemiBold.ttf);
     } 
   </style>
   <script>
@@ -42,17 +93,17 @@
 
     function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("jump").style.backgroundColor = "black";
-    document.getElementById("jump").style.color = "white";
+    document.getElementById("jump").style.backgroundColor = "#282828";
   } else {
-    document.getElementById("jump").style.backgroundColor = "grey";
-    document.getElementById("jump").style.color = "black";
+    document.getElementById("jump").style.backgroundColor = "#161414";
   }
 }
   </script>
     <div class="jumbotron" id="jump">
     <a href="#" id="logo"><img src="logo_final.png" alt=""/></a> 
-    <a href="#" id="menu"><img src="menu.png" alt=""/></a> 
+    <a href="#" id="menu"><img src="menu.png" alt=""/></a>
+    <a href="#" id ="item1"><button type="button" class="button1"><b>Join the waitlist</b></button></a>
+    <a href="#" id ="item2" class="active">About</a> 
   </div>
 <div class="container">
   <div class="row">
