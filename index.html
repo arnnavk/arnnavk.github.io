@@ -10,106 +10,6 @@
   </head>
 <body>
 
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-      body {
-        background-color: #F5F5F5;
-        font-family: myFont;
-        overflow-x:hidden;
-      }
-      .container {
-        width: 100%;
-        background-color: #161414;
-        padding: 20px;
-      }
-    .jumbotron {
-      width: 100%;
-      background-color: #161414;
-      position: sticky; 
-      position: -webkit-sticky;
-      top: 0;
-      z-index: 9;
-      transition: 0.5s;
-      color:black;
-      overflow: hidden;
-      padding: 2%;
-    }
-     .jumbotron #menu {
-       display: none;
-     }
-     .jumbotron #item1 {
-      padding: 40px;
-      text-transform: uppercase;
-      float:right;
-      font-family: MyFont2;
-     }
-     .jumbotron #item2 {
-      padding: 54px;
-      font-family: MyFont2;
-      float: right;
-      text-decoration: none;
-      text-transform: uppercase;
-     }
-     .jumbotron .active {
-      color:rgb(0, 184, 153);
-     }
-
-     .button1 {
-      padding: 14px;
-      border: none;
-      outline: none;
-      border-radius: 10px;
-      background-color: rgb(0, 184, 153);
-      color: rgb(255, 255, 255);
-      cursor: pointer;
-      letter-spacing: 0.45px;
-      text-transform: uppercase;
-    }
-
-    .image {
-      width: 200px;
-      max-width: 200px;
-      left: 0;
-      right: 0;
-      margin: auto;
-      }
-      .text {
-      width: auto;
-      left: 0;
-      right: 0;
-      margin: auto;
-      text-align:center;
-      }
-
-    @media screen and (max-width: 1100px) {
-      .jumbotron {
-        padding: 0%;
-      }
-      .jumbotron #logo {
-        float: left;
-      }
-      .jumbotron #menu {
-        display: block;
-        cursor: pointer;
-        padding-right: 2%;
-        float: right;
-      }
-      .jumbotron #item1, #item2 {
-        display: none;
-      }
-    }
-    @font-face {
-      font-family: MyFont;
-      src: url(fonts/Gilroy-Medium.ttf);
-    }
-  
-    @font-face {
-      font-family: MyFont2;
-      src: url(fonts/Montserrat-SemiBold.ttf);
-    } 
-  </style>
   <script>
     window.onscroll = function() {scrollFunction()};
 
@@ -231,6 +131,113 @@ function change(){
 
 var timer = setInterval('change();', 1000);
   </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+      body {
+        background-color: #F5F5F5;
+        font-family: myFont;
+        overflow-x:hidden;
+      }
+      .wrapper {
+        background-color: #161414;
+        width: 100%;
+        height: auto;
+      }
+      .container {
+        width: 100%;
+        background-color: #161414;
+        padding: 20px;
+      }
+    .jumbotron {
+      width: 100%;
+      background-color: #161414;
+      position: sticky; 
+      position: -webkit-sticky;
+      top: 0;
+      z-index: 9;
+      transition: 0.5s;
+      color:black;
+      overflow: hidden;
+      padding: 2%;
+    }
+     .jumbotron #menu {
+       display: none;
+     }
+     .jumbotron #item1 {
+      padding: 40px;
+      text-transform: uppercase;
+      float:right;
+      font-family: MyFont2;
+     }
+     .jumbotron #item2 {
+      padding: 54px;
+      font-family: MyFont2;
+      float: right;
+      text-decoration: none;
+      text-transform: uppercase;
+     }
+     .jumbotron .active {
+      color:rgb(0, 184, 153);
+     }
+
+     .button1 {
+      padding: 14px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      background-color: rgb(0, 184, 153);
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      letter-spacing: 0.45px;
+      text-transform: uppercase;
+    }
+
+    .image {
+      width: 200px;
+      max-width: 200px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      }
+      .text {
+      width: auto;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align:center;
+      }
+
+    @media screen and (max-width: 1100px) {
+      .jumbotron {
+        padding: 0%;
+      }
+      .jumbotron #logo {
+        float: left;
+      }
+      .jumbotron #menu {
+        display: block;
+        cursor: pointer;
+        padding-right: 2%;
+        float: right;
+      }
+      .jumbotron #item1, #item2 {
+        display: none;
+      }
+    }
+    @font-face {
+      font-family: MyFont;
+      src: url(fonts/Gilroy-Medium.ttf);
+    }
+  
+    @font-face {
+      font-family: MyFont2;
+      src: url(fonts/Montserrat-SemiBold.ttf);
+    } 
+  </style>
+  <div class="wrapper">
     <div class="jumbotron" id="jump">
     <a href="#" id="logo"><img src="logo_final.png" alt=""/></a> 
     <a href="#" id="menu"><img src="menu.png" alt=""/></a>
@@ -246,6 +253,6 @@ var timer = setInterval('change();', 1000);
       <h3 style="color: white;">The ones who are crazy enough to think they can change the world, are the ones who do&#8228; - Steve Jobs&#8228;</h3>
     </div>
 </div>
-
+</div>
 </body>
 </html>
