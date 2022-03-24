@@ -201,8 +201,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-decoration: underline;
   text-decoration-color: #ED7D31;
   -webkit-text-decoration-color: #ED7D31;
-  text-decoration-thickness: 20%;
-  -webkit-text-decoration-thickness: 20%;
+  text-decoration-thickness: 5px;
+  -webkit-text-decoration-thickness: 5px;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
