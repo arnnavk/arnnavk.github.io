@@ -358,9 +358,9 @@ section {
   color: white;
 }
 #about p{
-  font-size: 22px;
+  font-size: 24px;
   line-height: 2;
-  font-family: MyFont3;
+  font-family: "Times New Roman", Times, serif;
 }
 #about .btn-get-started {
   background: #ED7D31;
@@ -382,9 +382,9 @@ section {
   color: white;
 }
 #about2 p{
-  font-size: 18px;
+  font-size: 20px;
   line-height: 2;
-  font-family: MyFont3;
+  font-family: "Times New Roman", Times, serif;
 }
 #about2 .btn-get-started {
   background: #ED7D31;
@@ -408,8 +408,8 @@ section {
   padding-top: 35px;
 }
 #about3 p{
-  font-size: 20px;
-  font-family: MyFont3;
+  font-size: 22px;
+  font-family:"Times New Roman", Times, serif;
   margin-left: 1px;
 }
 #about3 .btn-get-started {
@@ -447,6 +447,10 @@ section {
     padding: 8px 22px;
     font-size: 14px;
   }
+  #about3 .btn-get-started {
+    padding: 8px 22px;
+    font-size: 14px;
+  }
   #about2 h1{
     font-size: 1.7rem;
   }
@@ -463,8 +467,8 @@ section {
     padding-top: 0px;
   }
   #about3 p{
-    font-size: 16px;
-    font-family: MyFont3;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
   }
 }
 
