@@ -377,6 +377,30 @@ section {
   margin: 5px;
   color: #fff;
 }
+#about1 {
+  background-color: #0A4496;
+  color: white;
+}
+#about1 p{
+  font-size: 18px;
+  line-height: 2;
+  font-family: "Times New Roman", Times, serif;
+}
+#about1 .btn-get-started {
+  background: #ED7D31;
+  border: 2px solid #ED7D31;
+}
+#about1 .btn-get-started {
+  font-family: MyFont2;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 6px;
+  margin: 5px;
+  color: #fff;
+}
 #about2 {
   background-color: #0A4496;
   color: white;
@@ -440,6 +464,22 @@ section {
     max-height: 250px;
   }
   #about .btn-get-started {
+    padding: 8px 22px;
+    font-size: 14px;
+  }
+  #about1 h1{
+    font-size: 1.7rem;
+  }
+  #about1 p{
+    font-size: 14px;
+    padding-top: 10px;
+    margin-left: 1px;
+  }
+  #about1 img{
+    max-width: 250px;
+    max-height: 250px;
+  }
+  #about1 .btn-get-started {
     padding: 8px 22px;
     font-size: 14px;
   }
