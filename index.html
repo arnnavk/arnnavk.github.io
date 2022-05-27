@@ -1,86 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Home - B&M Trading</title>
-	<meta charset="UTF-8"> 
-	<meta name="description" content="B&M Trading LLC is a Orlando grown business that deals in diecast model vehicles, toys and games." />
-    <meta name="keywords" content="B&M Trading, model cars, remote-controlled airplanes, dominoes, mahjong sets" />
-	<link rel="shortcut icon" href="images/favicon.ico" />
-	<link rel="stylesheet" href="style.css" />
-	
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Hashtag Marketing</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <meta name="format-detection" content="telephone=no"/>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-<header>
-	<div id="headerGrid">
-		<form action="cart.html"><button type="submit" id="cart" title="View Your Cart"><img src="images/icons/4.png" alt="Cart Icon"></button></form>
-		<form action="login.html"><button id="logout" title="Login or Logout"><img src="images/icons/signin.png" alt="Sigin"></button></form>
-	</div>
-	<img  src="images/icons/logos/1cropped.png" id="logo" alt="B&M Trading LLC Logo">
-	<nav>
-		<a href="index.html" id="homeLink">Home</a>
-		<a href="aboutus.html" id="aboutUsLink">About Us</a>
-		<a href="products.html" id="productsLink">Products</a>
-		<a href="contact.html" id="contactLink">Contact</a>
-	</nav>
-</header>
+  <script>
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("header").style.boxShadow = "0px 6px 9px 0px rgba(0, 0, 0, 0.4)";
+      } else {
+        document.getElementById("header").style.boxShadow = "";
+      }
+    }
+    </script>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
 
-<a href="aboutus.html"><img src="images/banner0.png" id="bannerImg" alt="Banner Image"></a>
-	<a href="productdetail.html" class="productDetailLink">
-		<h2 class="gray">Item of the Month</h2>
-		<div id="col2GridHome">
-			<p id="col2GridContentHome">
-					The featured item of the month is the one and only officially licensed model of the original 1966 TV series Batmobile at 1:18 scale. Hot Wheels released this as a special for their 40th anniversy, they even collaborated with George Barris to ensure the replica's exact design.<br>
-					Price : $90.99
+      <div id="logo">
+        <h1>
+        <a href=" /"><img src="assets/img/logo.png" alt=""></a>
+        </h1>
+      </div>
 
-			</p>
-			<img src="images\diecast\Hot Wheels\batmobile.jpg" id="col2GridImgHome" alt="Image of a 1966 TV series Batmobile">
-		</div>
-	</a>
-	<h2 class="gray">New Products</h2>
-	<div  class="col3GridHome">
-		<img src="images\sizeFix\microHeli.png" tabindex="0" alt="Image of a  Micro Mosquito Helicopter">
-		<img src="images\sizeFix\hondacbr.png" tabindex="0" alt="Image of a  Maisto CBR1000RR">
-		<img src="images\sizeFix\monsterbus.png" tabindex="0" alt="Image of a  Monster School Bus">
-		<div>Micro Mosquito Helicopter</div>
-		<div>Maisto CBR1000RR</div>
-		<div>Monster School Bus</div>
-	</div>
-	<h2 class="gray">Best Selling</h2>
-	<div  class="col3GridHome">
-		<img src="images\sizeFix\rcboat.png" tabindex="0" alt="Image of a Feilun Ft007 Racing RC Boat">
-		<img src="images\sizeFix\v912.png" tabindex="0" alt="Image of a Mini Flybarless Helicopter">
-		<img src="images\sizeFix\b2.png" tabindex="0" alt="Image of a Stealth Airplanes - B-2 Bomber">
-		<div>Feilun Ft007 Racing RC Boat</div>
-		<div>Mini Flybarless Helicopter</div>
-		<div>Stealth Airplanes - B-2 Bomber</div>
-	</div>
-	<h2 class="gray">Diecast Cars</h2>
-	<div  class="col3GridHome">
-		<img src="images\sizeFix\55Chevy.png" tabindex="0" alt="Image of a 1995 Chevy Bel Air">
-		<img src="images\sizeFix\69Chevy.png" tabindex="0" alt="Image of a 1969 Chevy Camaro">
-		<img src="images\sizeFix\79Drag.png" tabindex="0" alt="Image of a 1970 Ford Mustang">
-		<div>1995 Chevy Bel Air</div>
-		<div>1969 Chevy Camaro</div>
-		<div>1970 Ford Mustang </div>
-	</div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="#">Home</a></li>
+          <li><a class="nav-link scrollto" href="#">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#">Team</a></li>
+          <li><a class="nav-link scrollto" href="#">Locations</a></li>
+          <li><a class="nav-link scrollto" href="#">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
 
-<br>
-<br><br>
+    </div>
+  </header>
+  <!-- End Header -->
 
-<footer>
-	<div id="socialMediaGrid">
-		<a href="https://instagram.com" target="about:blank"><img  src="images/icons/social/19.png" id="icon0" alt="Instagram" title="Instagram"></a>
-		<a href="https://facebook.com" target="about:blank"><img  src="images/icons/social/20.png" id="icon1" alt="Facebook" title="Facebook"></a>
-		<a href="https://twitter.com" target="about:blank"><img  src="images/icons/social/21.png" id="icon2" alt="Twitter" title="Twitter"></a>
-		<a href="mailto:#?subject=B%26M%20Trading%20Hobby%20Shop&body=Hey%2C%20Check%20out%20this%20cool%20hobby%20shop!%0D%0Ahttp%3A%2F%2Fwww.bmtradingllc.com%2F"><img  src="images/icons/share.png" id="icon3" alt="Share" title="Share"></a>
-	</div>
-© 2020 B&M Trading LLC <br>
-Website Developed by <u class="orangeOnHover">Ginger Dingo</u>
-	<div id="scrollTopGrid">
-		<a href="#">
-			<img src="images/icons/scrollTop.png" alt="Scroll to Top of Page" title="Scroll to the Top of the Page">
-		</a>
-	</div>
-</footer> 
-</body>
+   <!-- ======= Hero Section ======= -->
+   <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-2 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Eleven Years Going Strong</h1>
+          <div class="mt-3">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img class="image1" src="assets/img/hashtag1.png" alt="">
+          <img class="image2" src="assets/img/hashtag1.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 content">
+          <h2>What we do ?</h2>
+          <p>Hashtag Marketing is an integrated
+            marketing communications company with
+            a mission to create and maintain a
+            prominent position for your business in the
+            right target markets at the right time.
+            In today’s competitive jungle, with digital
+            weapons and instinctual strategies, we
+            provide the sharpened tools and tailored
+            tactics to transform your cub into a king and
+            lead you to the helm of affairs.
+          </p>
+          <a href="about.html" class="btn-get-started scrollto">Read More</a>
+        </div>
+        <div class="col-lg-6 about-img">
+          <img src="assets/img/about-img.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Years of Experience</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Awards</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Counts Section -->
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>What We Offer</h2>
+        <p>A brand isn't confined to individual endeavors, it is a belief grown in all spheres of creation. HashTag Marketing offers a range of services to help your business thrive.</p>
+      </header>
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="service-box blue">
+            <i class="bi bi-bullseye"></i>
+            <h3>Brand Management</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="service-box orange">
+            <i class="bi-gem"></i>
+            <h3>Digital Marketing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="service-box green">
+            <i class="bi-gear-wide-connected"></i>
+            <h3>Event Management</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="service-box red">
+            <i class="bi-pencil"></i>
+            <h3>Creative Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="service-box purple">
+            <i class="bi-server"></i>
+            <h3>Content Creation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="service-box pink">
+            <i class="bi-life-preserver"></i>
+            <h3>Research &#38; Consulting</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- End Services Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header">
+        <h2>Check Our Latest Work</h2>
+        <p>We work directly with our clients, ensuring growth and harmony through every stage of the project.</p>
+      </div>
+
+      <div class="row portfolio-container" data-aos="fade-up">
+
+        <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+          <a href="project_details.html"><img src="assets/img/portfolio/1.png" class="img-fluid" alt=""></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+          <a href="project_details.html"><img src="assets/img/portfolio/2.png" class="img-fluid" alt=""></a>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+          <a href="project_details.html"><img src="assets/img/portfolio/3.png" class="img-fluid" alt=""></a>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+          <a href="project_details.html"><img src="assets/img/portfolio/4.png" class="img-fluid" alt=""></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+          <a href="project_details.html"><img src="assets/img/portfolio/6.jpg" class="img-fluid" alt=""></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+          <a href="project_details.html"><img src="assets/img/portfolio/7.png" class="img-fluid" alt=""></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+          <a href="project_details.html"><img src="assets/img/portfolio/8.png" class="img-fluid" alt=""></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+          <a href="project_details.html"><img src="assets/img/portfolio/9.png" class="img-fluid" alt=""></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+          <a href="project_details.html"><img src="assets/img/portfolio/10.jpg" class="img-fluid" alt=""></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+          <a href="project_details.html"><img src="assets/img/portfolio/11.png" class="img-fluid" alt=""></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+          <a href="project_details.html"><img src="assets/img/portfolio/12.jpg" class="img-fluid" alt=""></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+          <a href="project_details.html"><img src="assets/img/portfolio/13.png" class="img-fluid" alt=""></a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End Portfolio Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Subscribe to our email newsletter to receive our news, updates and awesome free files, tuts and sources.
+            </p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3><a href=" /"><img src="assets/img/logo.png" alt=""></a></h3>
+            <p>
+              403-Gallaria, DLF City Phase-IV<br>
+              Gurgaon-122002 Haryana<br> India.<br><br>
+              <strong>Phone:</strong> +91 9871130983<br>
+              <strong>Email:</strong> info@hashtagmarketing.in<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Portfolio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Locations</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Brand Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Digital Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Event Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Creative Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Content Creation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Research &#38; Consulting</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>About Us</h4>
+            <p>Hashtag Marketing is an integrated
+              marketing communications company with
+              a mission...</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong>Hashtag Marketing</strong>. All Rights Reserved.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><strong><i class="bi bi-arrow-up-short"></i></strong></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </body>
 </html>
