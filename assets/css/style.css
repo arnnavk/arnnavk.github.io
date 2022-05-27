@@ -231,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   #hero .image2 {
-    max-width: 350px;
+    max-width: 300px;
   }
 }
 @media (max-width: 768px) {
@@ -252,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero .image1 {
     display: block;
-    max-width: 350px;
+    max-width: 300px;
   }
 }
 
