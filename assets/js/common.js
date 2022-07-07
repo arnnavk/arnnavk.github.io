@@ -286,6 +286,12 @@ $(function() {
 	// Carousel Testimonials
 	$('.js-testimonials').each(function() {
     var swiperTestimonials = new Swiper('.js-testimonials', {
+		speed: 600,
+		loop: true,
+		autoplay: {
+		  delay: 3000,
+		  disableOnInteraction: false
+		},
         slidesPerView: 2,
 		    spaceBetween: 50,
 		    pagination: {

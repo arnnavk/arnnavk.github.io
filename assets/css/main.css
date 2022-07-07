@@ -1523,12 +1523,6 @@ hr {
 	max-width: 180px;
 }
 
-@media screen and (max-width: 768px) {
-	.logo-image img {
-		max-width: 150px;
-	}	
-}
-
 .no-scroll.dark-first .header .header__builder .logo-image img {
 	filter: none;
 }
@@ -2059,7 +2053,7 @@ hr {
 	bottom: -10px;
 	width: 0;
 	height: 2px;
-	background: #10B0A2;
+	background: #eb6165;
 	transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-moz-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
@@ -7139,7 +7133,7 @@ body .js-testimonials {
 body .js-testimonials .swiper-pagination {
 	bottom: 0;
 	font-size: 0;
-	text-align: left;
+	text-align: center;
 }
 
 body .js-testimonials .swiper-pagination .swiper-pagination-bullet {
@@ -7149,7 +7143,7 @@ body .js-testimonials .swiper-pagination .swiper-pagination-bullet {
 	height: 8px;
 	display: inline-block;
 	vertical-align: top;
-	background: #fff;
+	background: rgba(16, 176, 162, 1);;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
@@ -7159,21 +7153,44 @@ body .js-testimonials .swiper-pagination .swiper-pagination-bullet {
 body .js-testimonials .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	opacity: 1;
 	width: 24px;
-	background: #eb6165;
+	background: rgba(16, 176, 162, 1);
 }
 
 .testimonials-item {
 	display: block;
+	border-right: 1px solid #323141;
 }
 
 .testimonials-item .image {
-	margin-right: 30px;
-	float: left;
-	width: 71px;
+	padding: 15px 25px;
+	margin-right: 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	opacity: 0.45;
+	transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+	-webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+@media screen and (max-width: 768px) {
+	.testimonials-item {
+		border-right: none;
+	}
 }
 
 .testimonials-item .image img {
-	border-radius: 100%;
+	max-width: 130px;
+	max-height: 100%;
+}
+
+.testimonials-item:hover .image {
+	opacity: 1;
 }
 
 .testimonials-item .desc {
