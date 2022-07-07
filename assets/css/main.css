@@ -7181,6 +7181,7 @@ body .js-testimonials .swiper-pagination .swiper-pagination-bullet.swiper-pagina
 @media screen and (max-width: 768px) {
 	.testimonials-item {
 		border-right: none;
+		border-bottom: 1px solid #323141;
 	}
 }
 
