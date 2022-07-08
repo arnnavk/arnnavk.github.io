@@ -7184,6 +7184,9 @@ body .js-testimonials .swiper-pagination .swiper-pagination-bullet.swiper-pagina
 		border-right: none;
 		border-bottom: 1px solid #323141;
 	}
+	.testimonials-item .image {
+		opacity: 1;
+	}
 }
 
 .testimonials-item .image img {
