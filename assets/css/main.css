@@ -3702,13 +3702,14 @@ body .hero-main-slider .swiper-pagination {
 
 .filter-links a {
 	margin-bottom: 20px;
-	margin-right: 35px;
+	margin-right: 15px;
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
 	color: black;
-	font-weight: 700;
+	font-weight: 600;
 	text-decoration: none;
+	font-size: 16px;
 }
 
 .filter-links a:before {
@@ -3733,7 +3734,7 @@ body .hero-main-slider .swiper-pagination {
 }
 
 .filter-links a:hover:before {
-	width: 40px;
+	width: 100px;
 }
 
 .filter-links a.active {
@@ -7065,6 +7066,7 @@ a.wp-block-button__link {
 	}
 	.filter-links {
 		margin-bottom: 20px;
+		text-align: center;
 	}
 }
 
