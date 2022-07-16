@@ -3610,13 +3610,13 @@ body .hero-main-slider .swiper-pagination {
 	overflow: hidden;
 }
 
-.partners-items .partners-col {
+/*.partners-items .partners-col {
 	border-left: 1px solid #323141;
 }
 
 .partners-items .partners-col:last-child {
 	border-right: 1px solid #323141;
-}
+}*/
 
 .partners-items .partners-col:nth-child(1),
 .partners-items .partners-col:nth-child(2) {
@@ -7131,6 +7131,7 @@ body .js-testimonials {
 	padding-bottom: 50px;
 	position: relative;
 	overflow: hidden;
+	cursor: grab;
 }
 
 body .js-testimonials .swiper-pagination {
@@ -7161,7 +7162,6 @@ body .js-testimonials .swiper-pagination .swiper-pagination-bullet.swiper-pagina
 
 .testimonials-item {
 	display: block;
-	border-right: 1px solid #323141;
 }
 
 .testimonials-item .image {

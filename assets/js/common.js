@@ -287,7 +287,7 @@ $(function() {
 	$('.js-testimonials').each(function() {
     var swiperTestimonials = new Swiper('.js-testimonials', {
 		speed: 600,
-		loop: true,
+		loop: false,
 		autoplay: {
 		  delay: 3000,
 		  disableOnInteraction: false
