@@ -28,7 +28,7 @@
 
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['subject'], 'Subject');
+  $contact->add_message( 'Cambridge A/AS Level Physics', 'Subject');
   $contact->add_message( $_POST['message'], 'Message', 1000);
 
   echo $contact->send();
