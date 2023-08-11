@@ -471,6 +471,26 @@ h6 {
   border: 2px solid #5e17eb;
 }
 
+#hero .demo_call {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 30px;
+  margin-right: 15px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#hero .demo_call:hover {
+  background: #3ac162;
+  border: 2px solid #3ac162;
+}
+
 #hero i{
   font-size: 18px;
 }
@@ -770,6 +790,26 @@ section {
 .courses .btn-get-started:hover {
   background: #3ac162;
   border: 2px solid #3ac162;
+  color: white;
+}
+
+.courses .book_your_session {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 30px;
+  border: 2px solid black;
+  color: black;
+}
+
+.courses .book_your_session:hover {
+  background: #5e17eb;
+  border: 2px solid #5e17eb;
   color: white;
 }
 
