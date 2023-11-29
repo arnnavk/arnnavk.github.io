@@ -1,10 +1,4 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
 
   // Replace contact@example.com with your real receiving email address
   $receiving_email_address = 'contact@example.com';
@@ -19,9 +13,9 @@
   $contact->ajax = true;
   
   $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
+  $contact->from_name = "Subscriber";
   $contact->from_email = $_POST['email'];
-  $contact->subject = 'Online Appointment Form';
+  $contact->subject ="Notify me request";
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   /*
@@ -33,13 +27,7 @@
   );
   */
 
-  $contact->add_message( $_POST['name'], 'Name');
   $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['phone'], 'Phone');
-  $contact->add_message( $_POST['date'], 'Appointment Date');
-  $contact->add_message( $_POST['department'], 'Department');
-  $contact->add_message( $_POST['doctor'], 'Doctor');
-  $contact->add_message( $_POST['message'], 'Message');
 
   echo $contact->send();
 ?>
